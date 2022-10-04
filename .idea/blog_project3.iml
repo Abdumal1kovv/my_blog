@@ -15,6 +15,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/env" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (my_blog1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
