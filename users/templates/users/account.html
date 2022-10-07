@@ -11,8 +11,7 @@
                     <div class="card text-center">
                         <div class="card__body dev">
                             <a class="tag tag--pill tag--main settings__btn" href="{% url 'edit-account' %}"><i
-                                    class="im im-edit"></i>
-                                Edit </a>
+                                    class="im im-edit"></i> Edit </a>
                             <img class="avatar avatar--xl dev__avatar" src="{{ profile.image_url }}"/>
 
                             <h2 class="dev__name"> {{ profile.name }} </h2>
@@ -103,8 +102,7 @@
                                 </td>
                                 <td class="settings__tableActions">
                                     <a class="tag tag--pill tag--main settings__btn"
-                                       href="{% url 'update-project' project.id %}"><i class="im im-edit"></i>
-                                        Edit</a>
+                                       href="{% url 'update-project' project.id %}"><i class="im im-edit"></i> Edit </a>
                                     <a class="tag tag--pill tag--main settings__btn"
                                        href="{% url 'delete-project' project.id %}?next=/account"><i
                                             class="im im-x-mark-circle-o"></i>

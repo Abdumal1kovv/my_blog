@@ -4,15 +4,16 @@ let logout_btn = document.getElementById('logout-btn')
 let token = localStorage.getItem('token')
 
 if (token) {
-    logout_btn.remove()
+    login_btn.remove();
 } else {
-    login_btn.remove()
+    logout_btn.remove();
 }
+
 
 logout_btn.addEventListener('click', (e) => {
     e.preventDefault()
     localStorage.removeItem('token')
-    window.location = 'file:///home/user/django_projects/blog_project3_frontend/login.html'
+    window.location = 'file:///home/user/projects/django_projects/my_blog1/frontend/login.html'
 })
 
 let projectsUrl = "http://127.0.0.1:8000/api/projects/"
