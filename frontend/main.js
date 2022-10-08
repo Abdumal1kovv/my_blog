@@ -4,9 +4,9 @@ let logout_btn = document.getElementById('logout-btn')
 let token = localStorage.getItem('token')
 
 if (token) {
-    login_btn.remove();
-} else {
     logout_btn.remove();
+} else {
+    login_btn.remove();
 }
 
 

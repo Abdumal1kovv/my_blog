@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 from datetime import timedelta
 from dotenv import load_dotenv
+from rest_framework_swagger.views import get_swagger_view
+
 # Environment variables
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # external app
     'rest_framework',
+    'rest_framework_swagger',
     'corsheaders',
     # my apps
     'projects.apps.ProjectsConfig',
