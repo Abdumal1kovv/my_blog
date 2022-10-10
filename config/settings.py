@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # external app
     'rest_framework',
     'rest_framework_swagger',
+    'drf_yasg',
     'corsheaders',
     # my apps
     'projects.apps.ProjectsConfig',
