@@ -31,7 +31,7 @@ def login_user(request):
             login(request, user)
             return redirect(request.GET['next'] if 'next' in request.GET else 'account')
         else:
-            messages.error(request, "Username or Password is incorrect")
+            messages.error(request, 'Username or Password is incorrect')
 
     return render(request, 'users/login_register.html')
 

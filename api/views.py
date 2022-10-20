@@ -9,12 +9,12 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 @api_view(['GET'])
 def get_Routes(request):
     routes = [
-        {'GET': '/api/projects'},
-        {'GET': '/api/projects/id'},
-        {'POST': '/api/projects/id/vote'},
+        {'GET': '/api/v1/projects'},
+        {'GET': '/api/v1/projects/id'},
+        {'POST': '/api/v1/projects/id/vote'},
 
-        {'POST': '/api/users/token'},
-        {'POST': '/api/users/token/refresh'},
+        {'POST': '/api/v1/users/token'},
+        {'POST': '/api/v1/users/token/refresh'},
     ]
     return Response(routes)
 
